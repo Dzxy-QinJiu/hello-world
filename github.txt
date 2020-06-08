@@ -1,12 +1,22 @@
-在命令行上创建新的存储库
-echo "# my-jQuery" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/Dzxy-QinJiu/my-jQuery.git
-git push -u origin master
-                
-从命令行推送现有存储库
-git remote add origin https://github.com/Dzxy-QinJiu/my-jQuery.git
-git push -u origin master
+执行git init
+初始化成功后你会发现项目里多了一个隐藏文件夹.git
 
+执行指令：git add .
+将所有文件添加到仓库
+
+执行指令：git commit -m "提交文件"
+双引号内是提交注释。
+
+
+关联github仓库
+到github text仓库复制仓库地址
+执行指令：git remote add origin https://github.com/hanyuntao/text.git
+
+报错fatal: remote origin already exists.
+git remote rm origin
+
+可以通过如下命令进行代码合并【注：pull=fetch+merge]
+git pull --rebase origin master
+
+上传本地代码
+执行指令：git push -u origin master
