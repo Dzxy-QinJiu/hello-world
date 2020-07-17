@@ -12,6 +12,16 @@
           alt="美团网"
         />
       </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div class="form">
         <h4 v-if="error" class="tips">{{error}}</h4>
         <p>
